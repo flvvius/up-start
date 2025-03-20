@@ -20,9 +20,14 @@ const Navbar = () => {
               <Link href="/startup/create">
                 <span>Create</span>
               </Link>
-              <button onClick={() => signOut()}>
+              <button
+                onClick={() => signOut({ redirect: true, callbackUrl: "/" })}
+              >
                 <span>Log out</span>
               </button>
+              <Link href={`/user/${session?.user.name}`}>
+                <span>{session?.user.name}</span>
+              </Link>
             </>
           ) : (
             <>
