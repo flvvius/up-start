@@ -12,7 +12,7 @@ const Navbar = () => {
     <header className="px-5 font-work-sans bg-white shadow-sm">
       <nav className="flex items-center justify-between">
         <Link href="/">
-          <Image src="/upstart-logo.png" alt="logo" width={70} height={70} />
+          <Image src="/logo.png" alt="logo" width={70} height={70} />
         </Link>
         <div className="flex items-center gap-5 text-black">
           {session && session?.user ? (
