@@ -5,15 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "via.placeholder.com",
-      },
-      {
-        protocol: "https",
-        hostname: "flavius.pro",
-      },
-      {
-        protocol: "https",
-        hostname: "utfs.io",
+        hostname: "*",
       },
     ],
   },

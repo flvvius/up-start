@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./providers";
 import localFont from "next/font/local";
-
+import { Toaster } from "@/components/ui/sonner";
 const workSans = localFont({
   src: [
     {
@@ -62,7 +62,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${workSans.variable} antialiased`}>
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <Toaster />
+        </Providers>
       </body>
     </html>
   );
