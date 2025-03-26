@@ -2,7 +2,7 @@ import { STARTUPS_QUERY } from "@/sanity/lib/queries";
 import SearchForm from "../../components/search-form";
 import StartupCard, { StartupTypeCard } from "../../components/startup-card";
 import { sanityFetch, SanityLive } from "@/sanity/lib/live";
-import { getServerSession } from "next-auth";
+import getServerSession from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 
 export default async function Home({

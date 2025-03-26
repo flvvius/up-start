@@ -1,7 +1,7 @@
 "use server";
 
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
-import { getServerSession } from "next-auth";
+import getServerSession from "next-auth";
 
 import { parseServerActionResponse } from "./utils";
 import slugify from "slugify";
